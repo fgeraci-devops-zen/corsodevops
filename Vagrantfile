@@ -5,6 +5,7 @@ config.vm.provider "virtualbox" do |v|
 end
 $script = <<-SCRIPT
 echo I am provisioning...
+echo second time
 date > /etc/vagrant_provisioned_at
 SCRIPT
   config.vm.define "node1" do |node1|

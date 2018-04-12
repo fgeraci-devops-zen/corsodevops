@@ -4,7 +4,7 @@ config.vm.provider "virtualbox" do |v|
     v.customize ["modifyvm", :id, "--natdnsproxy1", "on"]
 end
 $script = <<-SCRIPT
-echo I am provisioning...
+echo I am provisioning...!!!
 echo second time
 date > /etc/vagrant_provisioned_at
 SCRIPT
